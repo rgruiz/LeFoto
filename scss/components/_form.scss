@@ -1,0 +1,47 @@
+.formSection {
+	display: grid;
+	grid-template-areas: 
+	"asideLeft formTitle asideRight"
+	"asideLeft form asideRight"
+	"asideLeft buttonsSection asideRight";
+	grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 5em 15em 5em;
+    @media screen and (max-width:  768px) {
+        grid-template-rows: 5em 15em 5em;
+    }
+    .formSection__formTitle{
+        grid-area: formTitle;
+        font-family: $font-fam-main;
+        text-align: center;
+        @media screen and (max-width:  768px) {
+            font-size: $font-size-medium;
+        }
+    }
+    .formSection__asideLeft{
+        grid-area: asideLeft;
+        background-color: $light-blue;
+        border-right: 2px dotted $orange;
+    }
+    .formSection__asideRight{
+        grid-area: asideRight;
+        background-image: url("../media/circuit-pattern.jpg");
+        background-size: cover;
+    }
+    .formSection__form{
+        grid-area: form;
+        padding: 1em;
+        font-family: $font-fam-content;
+        color: $orange;
+        @media screen and (max-width:  768px) {
+            font-size: small;
+        }
+    }
+    .formSection__input--anchoMax{
+        width:  $cover;
+    }
+    .formSection__buttonsSection {
+        padding:  1em;
+        grid-area: buttonsSection;
+    }
+    
+}

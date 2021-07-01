@@ -1,0 +1,73 @@
+@keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+}
+
+.mainSection {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+    @media only screen and (max-width:  768px) {
+        display: block;
+	    width: 90vw;
+	    margin: 0 auto;
+    }
+    .mainSection__mainTitle{
+        color: $light-blue;
+        font-family: $font-fam-main;
+        text-align: center;
+        @media only screen and (max-width:  768px) {
+            font-size: 1.5em;
+        }
+    }
+    .subsSection{
+        text-align: center;
+        margin: 0 20%;
+        padding: 0 100px;
+        border: 5px dashed $light-blue;
+        @media only screen and (max-width:  768px) {
+            margin:  0 auto;
+            padding:  0;
+            width: 80vw;
+        }
+    }
+    .subsSection--fadeIn{
+        animation: fadeIn ease 10s; 
+    }
+    .mainSection__subTitle{
+        color: $subtitle-color;
+        font-style: italic;
+        font-family: $font-fam-sub;
+    }
+    .mainSection__desc{
+        font-family: $font-fam-content;
+	    font-weight: $font-w100;
+    }
+
+    .articleSection{
+        margin: auto;
+        padding: 10px;
+        width: 80%;
+        p {
+            font-family: $font-fam-content;
+            color: $orange;
+        }
+    }
+    .articleSection--fadeIn{
+        animation: fadeIn ease 10s; 
+    }
+    .articleSection__subTitle{
+        color: $subtitle-color;
+        font-style: italic;
+        font-family: $font-fam-sub;
+    }
+}
+.mainSection--thankYou{
+    text-align: center;
+    margin-bottom: 10em;
+}

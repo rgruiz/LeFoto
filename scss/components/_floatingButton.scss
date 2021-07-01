@@ -1,0 +1,30 @@
+.floatingButton{
+    width: 200px;
+    position: fixed;
+    bottom: 50px;
+    right: -30px;
+    background-image: url("../media/whatsapp-256.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 80px;
+	text-decoration: none;
+	color: $orange;
+	font-family: $font-fam-sub;
+        &:hover{
+            color: black;
+        }
+    .floatingButton__whatsappText {
+        position: absolute;
+        bottom: -50px;
+        &:hover{
+            color: black;
+        }
+    }
+    @media only screen and (max-width:  480px) {
+        width: 50px;
+		bottom: 50px;
+		right: 10px;
+		height: 50px;
+		font-size: $font-size-small;
+    }
+}

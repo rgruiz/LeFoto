@@ -1,0 +1,75 @@
+.header {
+    display:  flex;
+	flex: 1;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+    @media screen and (max-width: 768px) {
+        margin: 1em auto;
+    }
+    .header__logo{
+        width: 10vw;
+        padding: 10px;
+        margin-left: 5em;
+        @media screen and (max-width: 768px) {
+            margin-left: 0;
+            width: 15vw;
+        }
+    }
+    .header__navbar {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
+    .header__mainNav {
+        margin: 20px 30px;
+        border: 1px dotted $light-blue;
+        padding-top: 5%;
+        width:  70vw;
+        @media screen and (max-width:  920px) {
+            width: auto;
+            padding-top: 0;
+        }
+        a {
+            text-decoration: none;
+            color: $light-blue;
+            font-family: $font-fam-main;
+            float: right;
+        }
+        a:hover {
+            transform: scale(1.5);
+            color: $orange;
+            font-family: $font-fam-main;
+        }
+        ul {
+            list-style-type: none;
+            padding-inline-start: 0;
+            width: 100%;
+            li {
+                display: inline-block;
+                width: 20%;
+                position: relative;
+                @media only screen and (max-width:  768px) {
+                    width: auto;
+                }
+            }
+        }
+    }
+    .navbar-toggler {
+        background: linear-gradient(-45deg, $dark 0%, $gradient-primary 0%, $gradient-secondary 100%);
+        font-size: 1rem;
+        padding: .1em .2em;
+        &:focus{
+            box-shadow: 0 0 0 0.1rem;
+        }
+        @media screen and (max-width:  920px) {
+            position: absolute;
+            top: .5em;
+            right: .5em;
+        }
+    }
+}

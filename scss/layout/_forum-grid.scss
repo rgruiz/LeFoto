@@ -1,0 +1,99 @@
+.forum-grid {
+	display:  grid;
+	grid-gap: 10px;
+	grid-template-areas: 
+	". forumTitle search"
+	"dateHeader topicHeader viewCounter"
+	". articleDesc .";
+	grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 90%;
+    margin: 2em auto;
+        @media screen and (max-width:  920px) {
+            grid-template-rows: 1fr .5fr 2fr;
+        }
+    .forum-grid__forumTitle{
+        grid-area: forumTitle;
+        color: $orange;
+        font-family: $font-fam-main;
+        text-align: center;
+        align-self: center;
+        @media screen and (max-width:  920px) {
+            grid-column-start: 1;
+            font-size: small;
+        }
+    }
+    .forum-grid__searchForum{
+        grid-area: search;
+        margin: 2em auto;
+        text-align: center;
+        align-self: center;
+        &:focus{
+            background: linear-gradient(-45deg, rgba(2,0,36,1) 0%, rgba(51,233,191,1) 0%, rgba(251,211,100,1) 100%);
+        }
+        @media screen and (max-width:  920px) {
+            width: $cover;
+            margin: 1.5em auto;
+        }
+    }
+    .fancyBorder {
+        border: 2px dashed $light-blue;
+    }
+    .forumSubt {
+        color: black !important;
+    }
+    .dateHeader {
+        grid-area: dateHeader;
+        @media screen and (max-width:  920px) {
+            font-size: small;
+        }
+    }
+    .topicHeader {
+        grid-area: topicHeader;
+    }
+    .viewCounter {
+        grid-area: viewCounter;
+        @media screen and (max-width:  920px) {
+
+            font-size: small;
+        }
+    }
+    .forum-grid__logInButton{
+        display: block;
+        margin: 10px 0;
+        padding: 14px 15px;
+        color: #fff;
+        background: linear-gradient(-45deg, $gradient-secondary 0%, $gradient-primary 0%, $dark 100%);
+        font-size: 1.8em;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        overflow: hidden;
+        letter-spacing: .08em;
+        border-radius: 0;
+        transition: all 1s ease;
+        font-family: 'Major Mono Display', monospace;
+        grid-area: articleDesc;
+        border-radius: $cover;
+        &:hover{
+            background: linear-gradient(-45deg, $dark 0%, $gradient-primary 0%, $gradient-secondary 100%);
+            color: #fff;
+            letter-spacing: .25em;
+            border-radius: 0;
+            transition: all 1s ease;
+        }
+    }
+    .forum-grid__content{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 10px,
+        #ccc 10px,
+        #ccc 20px);
+        z-index: -1;
+    }
+}

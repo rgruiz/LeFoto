@@ -1,0 +1,63 @@
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.hero {
+    background: linear-gradient(-45deg, $dark 0%, $gradient-primary 0%, $gradient-secondary 100%);
+	background-size: 400% 400%;
+	padding: 10px 15px;
+	animation: gradient 5s ease infinite;
+	position: relative;
+
+    .hero__signUpButton {
+        position: absolute;
+        left: 35%;
+        bottom: 15%;
+        display: block;
+        margin: 30px auto 0;
+        padding: 14px 15px;
+        color: #fff;
+        font-size: 2em;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        overflow: hidden;
+        letter-spacing: .08em;
+        border-radius: 0;
+        transition: all 1s ease;
+        font-family: $font-fam-main;
+        &:hover{
+            background: linear-gradient(-45deg, $dark 0%, $gradient-primary 0%, $gradient-secondary 100%);
+            color: #fff;
+            left: 30%;
+            letter-spacing: .4em;
+            border-radius: 0;
+            transition: all 1s ease;
+        }
+        @media only screen and (max-width:  768px) {
+            left: 35%;
+	        font-size: $font-size-medium;
+            &:hover{
+                left: 30%;
+            }
+        }
+        @media only screen and (max-width:  480px) {
+            left: 27%;
+            font-size: $font-size-small;
+            &:hover{
+                left: 22%;
+            }
+        }
+    }
+
+}
+

@@ -1,0 +1,62 @@
+/* 
+	Portfolios PAGE
+*/
+
+.gallery {
+	display: flex;
+	padding: 2px;
+	transition: .3s;
+    &:hover .gallery__image{
+        filter: grayscale(1);
+    }
+    @media screen and (max-width:  768px) {
+        flex-direction: column;
+    }
+}
+.gallery__column{
+    display: flex;
+	flex-direction: column;
+	width: 25%;
+    @media screen and (max-width:  920px) {
+        flex-direction: row;
+        width: $cover;
+    }
+    @media screen and (max-width:  500px) {
+        flex-direction: column;
+        width: $cover;
+    }
+}
+.gallery__link{
+    margin: 1em;
+	overflow: hidden;
+    &:hover .gallery__image{
+        filter: grayscale(0);
+    }
+    &:hover .gallery__caption{
+        opacity: 1;
+    }
+}
+.gallery__thumb{
+    position: relative !important;
+}
+.gallery__image{
+    display:  block;
+	width: $cover;
+	transition: .3s;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+.gallery__caption{
+    position: absolute;
+    bottom: -15px;
+    left: -10px;
+    padding: 20px 12px 15px;
+    width: $cover;
+    font-family: $font-fam-main;
+    color: white;
+    opacity: 0;
+    background: linear-gradient(
+	0deg, rgba(0, 0, 0, .5) 0%, rgba(255, 255 ,255 , 0) 100%);
+    transition: .3s;
+}

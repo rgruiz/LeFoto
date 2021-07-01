@@ -1,0 +1,19 @@
+.subsSection__tableComp{
+    margin: auto;
+    text-align: left;
+    thead{
+        background-color: $light-blue;
+        font-family: $font-fam-content;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+    }
+    tbody {
+        font-family: $font-fam-sub;
+    }
+    ol{
+        li{
+            color: $gold;  
+        }
+    }
+}

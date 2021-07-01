@@ -1,0 +1,34 @@
+/* Colors */
+$dark: rgba(2,0,36,1);
+$gradient-primary: rgba(51,233,191,1);
+$gradient-secondary: rgba(251,211,100,1);
+$light-blue: turquoise;
+$orange: orange;
+$gold: gold;
+$footer-color: mediumvioletred;
+$subtitle-color: gray;
+
+/* Fonts */
+$font-fam-main: 'Major Mono Display', monospace;
+$font-fam-sub: 'Roboto Slab', serif;
+$font-fam-content: 'Poppins', sans-serif;
+$font-w100: 100;
+$weight:('thin': 100, 'light': 300, 'regular': 400, 'bold': 600, 'bolder': 800);
+$size:('small': .75em, 'medium': 1.2em);
+$font-size-medium: 1.2em;
+$font-size-small: .75em;
+
+/* Sizes */
+$cover: 100%;
+
+@each $key, $value  in $weight {
+    .type-#{$key}{
+        font-weight: $value;
+    } 
+}
+
+@each $key, $value  in $size {
+    .text-#{$key}{
+        font-size: $value;
+    } 
+}
