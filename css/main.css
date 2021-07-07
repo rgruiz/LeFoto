@@ -546,7 +546,7 @@
 
 .hero .hero__signUpButton {
   position: absolute;
-  left: 35%;
+  left: 40%;
   bottom: 15%;
   display: block;
   margin: 30px auto 0;
@@ -568,30 +568,49 @@
 .hero .hero__signUpButton:hover {
   background: linear-gradient(-45deg, #020024 0%, #33e9bf 0%, #fbd364 100%);
   color: #fff;
-  left: 30%;
+  left: 37%;
   letter-spacing: .4em;
   border-radius: 0;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1200px) {
   .hero .hero__signUpButton {
     left: 35%;
-    font-size: 1.2em;
   }
   .hero .hero__signUpButton:hover {
     left: 30%;
   }
 }
 
+@media only screen and (max-width: 920px) {
+  .hero .hero__signUpButton {
+    left: 35%;
+    font-size: 1.2em;
+  }
+  .hero .hero__signUpButton:hover {
+    left: 32%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hero .hero__signUpButton {
+    left: 37%;
+    font-size: 1.2em;
+  }
+  .hero .hero__signUpButton:hover {
+    left: 35%;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   .hero .hero__signUpButton {
-    left: 27%;
+    left: 30%;
     font-size: 0.75em;
   }
   .hero .hero__signUpButton:hover {
-    left: 22%;
+    left: 24%;
   }
 }
 

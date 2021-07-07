@@ -19,7 +19,7 @@
 
     .hero__signUpButton {
         position: absolute;
-        left: 35%;
+        left: 40%;
         bottom: 15%;
         display: block;
         margin: 30px auto 0;
@@ -38,23 +38,36 @@
         &:hover{
             background: linear-gradient(-45deg, $dark 0%, $gradient-primary 0%, $gradient-secondary 100%);
             color: #fff;
-            left: 30%;
+            left: 37%;
             letter-spacing: .4em;
             border-radius: 0;
             transition: all 1s ease;
         }
-        @media only screen and (max-width:  768px) {
+        @media only screen and (max-width:  1200px) {
             left: 35%;
-	        font-size: $font-size-medium;
             &:hover{
                 left: 30%;
             }
         }
+        @media only screen and (max-width:  920px) {
+            left: 35%;
+	        font-size: $font-size-medium;
+            &:hover{
+                left: 32%;
+            }
+        }
+        @media only screen and (max-width:  768px) {
+            left: 37%;
+	        font-size: $font-size-medium;
+            &:hover{
+                left: 35%;
+            }
+        }
         @media only screen and (max-width:  480px) {
-            left: 27%;
+            left: 30%;
             font-size: $font-size-small;
             &:hover{
-                left: 22%;
+                left: 24%;
             }
         }
     }
