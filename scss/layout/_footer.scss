@@ -7,6 +7,7 @@
         justify-content: space-between;
         padding-top: .5rem;
         padding-bottom: .5rem;
+
     }
     .footer__footerMenu {
         margin: 20px 30px;
@@ -38,12 +39,9 @@
             }
         }
     }
-    p{  
+    address{  
         color: $orange;
         text-align: center;
-        @media only screen and (max-width:  480px) {
-            display: none;
-        }
     }
     .footerNav{
         background-color: $footer-color;

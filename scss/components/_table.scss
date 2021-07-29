@@ -10,6 +10,9 @@
     }
     tbody {
         font-family: $font-fam-sub;
+        @media only screen and (max-width:  920px) {
+            font-size: $font-size-small;
+        } 
     }
     ol{
         li{

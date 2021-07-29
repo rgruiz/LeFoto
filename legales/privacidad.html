@@ -1,17 +1,155 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
-<meta name="description" content="Política de privacidad de LeFoto explicada punto a punto">
-<meta name="keywords"
-	content="foro, portfolio, fotografía, comunidad, fotógrafos, fotos, red, fotografía analógica, fotografía profesional, fotografía publicitaria, fotografía artística, privacidad">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
 <html>
 
 <head>
+	<meta charset="utf-8">
+	<meta name="description" content="Política de privacidad de LeFoto explicada punto a punto">
+	<meta name="keywords"
+		content="foro, portfolio, fotografía, comunidad, fotógrafos, fotos, red, fotografía analógica, fotografía profesional, fotografía publicitaria, fotografía artística, privacidad">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
 	<title>Le Foto | Política de Privacidad</title>
+	<link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Poppins&family=Roboto+Slab&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<title>Le Foto | Inicio</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 </head>
 
 <body>
+	<div class="header">
+		<a href="../index.html"><img class="header__logo" src="../media/lefoto-logo.png" alt="logo"></a>
+		<nav class="header__navbar navbar-expand-lg ms-auto">
+			<div class="container-fluid">
+				<button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse header__mainNav" id="navbarNav">
+					<ul class="navbar-nav nav-justified">
+						<li class="nav-item">
+							<a class="nav-link type-bolder" href="../fotografia.html">Fotografía</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link type-bolder" href="../edicion.html">Edición</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link type-bolder" href="../contacto.html">Contacto</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link type-bolder" href="../portfolios.html">Portfolios</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link type-bolder" href="#" data-bs-toggle="modal"
+								data-bs-target="#loginModal">Log In</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+
+	<main class="legalesMain">
+
+		<header>
+			<h1 class="legalesMain__mainTitle">Privacidad: Cómo y qué tipo de información procesamos</h1>
+		</header>
+		<article class="legalesMain__article">
+			<p>
+				Versión vigente 19/07/2021
+			</p>
+			<p>
+				<u>Formas en las que recogemos tu información:</u>
+
+			<ul>
+				<li>Cuando te registrás o das información utilizando la plataforma.</li>
+				<li>Automáticamente, como cuando navegás por nuestras páginas.</li>
+				<li>De fuentes confiables (proveedores de servicios o aliados comerciales con los que trabajamos, burós
+					de
+					crédito, organismos públicos).</li>
+			</ul>
+			</p>
+			<p>
+				<u>Tipos de datos que recolectamos:</u>
+
+			<ul>
+				<li>Apodo o seudónimo.</li>
+				<li>Nombre y foto.</li>
+				<li>Identificación.</li>
+				<li>Información de contacto (número de teléfono, domicilio, dirección de e-mail, etc.).</li>
+			</ul>
+
+			</p>
+		</article>
+	</main>
+
+	<div class="footer">
+		<nav class="footer__navbar footerNav navbar-expand-lg">
+			<div class="container-fluid">
+				<button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse"
+					data-bs-target="#footerNav" aria-controls="footerNav" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse footer__footerMenu" id="footerNav">
+					<ul class="navbar-nav nav-justified justify-content-end">
+						<li class="nav-item">
+							<a class="nav-link type-bolder" href="privacidad.html">Privacidad</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link type-bolder" href="reglas.html">Reglas</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link type-bolder" href="condiciones.html">Condiciones</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link type-bolder" href="cookies.html">Cookies</a>
+						</li>
+					</ul>
+				</div>
+				<address>
+					Rodrigo Gabriel Ruiz® Todos los derechos reservados
+				</address>
+			</div>
+		</nav>
+	</div>
+
+	<!-- Login Modal -->
+	<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="loginModalLabel">Logueate en LeFoto!</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form class="modal-body__form" action="index.html">
+						<label for="email">
+							Correo Electrónico
+						</label>
+						<input type="email" name="email" placeholder="Ingrese su E-mail">
+						<label for="pass">
+							Contraseña
+						</label>
+						<input type="password" name="pass" placeholder="Ingrese su Contraseña">
+
+						<button type="submit" class="btn btn-primary">Logueate!</button>
+					</form>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+		crossorigin="anonymous"></script>
 
 </body>
 

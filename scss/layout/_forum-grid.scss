@@ -8,9 +8,15 @@
 	grid-template-columns: 20% 60% 20%;
     grid-template-rows: 1fr 1fr 1fr;
     width: 90%;
-    margin: 2em auto;
+    margin: 2em auto 7em auto;
         @media screen and (max-width:  920px) {
             grid-template-rows: 1fr .5fr 2fr;
+        }
+        @media screen and (max-width:  768px) {
+            margin-bottom: 22em;
+        }
+        @media screen and (max-width:  374px) {
+            margin-bottom: 7em;
         }
     .forum-grid__forumTitle{
         grid-area: forumTitle;
@@ -82,6 +88,9 @@
             letter-spacing: .25em;
             border-radius: 0;
             transition: all 1s ease;
+        }
+        @media screen and (max-width:  767px) {
+            font-size: medium;
         }
     }
     .forum-grid__content{

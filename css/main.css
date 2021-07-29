@@ -217,6 +217,7 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  margin: 2em auto;
 }
 
 @media only screen and (max-width: 768px) {
@@ -271,7 +272,7 @@
 }
 
 .mainSection .articleSection {
-  margin: auto;
+  margin: 2em auto;
   padding: 10px;
   width: 80%;
 }
@@ -290,6 +291,11 @@
   color: gray;
   font-style: italic;
   font-family: "Roboto Slab", serif;
+  margin-bottom: 1em;
+}
+
+.mainSection article {
+  margin: 3em auto;
 }
 
 .mainSection--thankYou {
@@ -354,15 +360,9 @@
   position: relative;
 }
 
-.footer p {
+.footer address {
   color: orange;
   text-align: center;
-}
-
-@media only screen and (max-width: 480px) {
-  .footer p {
-    display: none;
-  }
 }
 
 .footer .footerNav {
@@ -379,13 +379,25 @@
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
   width: 90%;
-  margin: 2em auto;
+  margin: 2em auto 7em auto;
 }
 
 @media screen and (max-width: 920px) {
   .forum-grid {
     -ms-grid-rows: 1fr .5fr 2fr;
         grid-template-rows: 1fr .5fr 2fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .forum-grid {
+    margin-bottom: 22em;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .forum-grid {
+    margin-bottom: 7em;
   }
 }
 
@@ -501,6 +513,12 @@
   transition: all 1s ease;
 }
 
+@media screen and (max-width: 767px) {
+  .forum-grid .forum-grid__logInButton {
+    font-size: medium;
+  }
+}
+
 .forum-grid .forum-grid__content {
   -ms-grid-column: 1;
       grid-column-start: 1;
@@ -509,6 +527,39 @@
       grid-row-start: 3;
   background: repeating-linear-gradient(45deg, transparent, transparent 10px, #ccc 10px, #ccc 20px);
   z-index: -1;
+}
+
+.legalesMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 10em auto;
+}
+
+.legalesMain .legalesMain__mainTitle {
+  color: turquoise;
+  font-family: "Major Mono Display", monospace;
+  text-align: center;
+}
+
+.legalesMain .legalesMain__article {
+  margin: 2em auto;
+  padding: 10px;
+  width: 80%;
+}
+
+.legalesMain .legalesMain__article p {
+  font-family: "Poppins", sans-serif;
+  color: orange;
 }
 
 @-webkit-keyframes gradient {
@@ -631,6 +682,12 @@
   font-family: "Roboto Slab", serif;
 }
 
+@media only screen and (max-width: 920px) {
+  .subsSection__tableComp tbody {
+    font-size: 0.75em;
+  }
+}
+
 .subsSection__tableComp ol li {
   color: gold;
 }
@@ -680,12 +737,20 @@
       grid-template-columns: 20% 60% 20%;
   -ms-grid-rows: 5em 15em 5em;
       grid-template-rows: 5em 15em 5em;
+  margin-bottom: 5em;
 }
 
 @media screen and (max-width: 768px) {
   .formSection {
     -ms-grid-rows: 5em 15em 5em;
         grid-template-rows: 5em 15em 5em;
+    margin-bottom: 22em;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .formSection {
+    margin-bottom: 2em;
   }
 }
 
@@ -725,7 +790,7 @@
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: form;
-  padding: 1em;
+  padding: 5em auto;
   font-family: "Poppins", sans-serif;
   color: orange;
 }

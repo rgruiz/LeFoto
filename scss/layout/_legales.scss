@@ -1,0 +1,21 @@
+.legalesMain {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+    margin: 10em auto;
+    .legalesMain__mainTitle {
+        color: $light-blue;
+        font-family: $font-fam-main;
+        text-align: center;
+    }
+    .legalesMain__article{
+        margin: 2em auto;
+        padding: 10px;
+        width: 80%;
+        p {
+            font-family: $font-fam-content;
+            color: $orange;
+        }
+    }
+}

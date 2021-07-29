@@ -6,8 +6,13 @@
 	"asideLeft buttonsSection asideRight";
 	grid-template-columns: 20% 60% 20%;
     grid-template-rows: 5em 15em 5em;
+    margin-bottom: 5em;
     @media screen and (max-width:  768px) {
         grid-template-rows: 5em 15em 5em;
+        margin-bottom: 22em;
+    }
+    @media screen and (max-width:  374px) {
+        margin-bottom: 2em;
     }
     .formSection__formTitle{
         grid-area: formTitle;
@@ -29,7 +34,7 @@
     }
     .formSection__form{
         grid-area: form;
-        padding: 1em;
+        padding: 5em auto;
         font-family: $font-fam-content;
         color: $orange;
         @media screen and (max-width:  768px) {
